@@ -1,12 +1,16 @@
 #lang racket/gui
-; Information  ; 
+(require 2htdp/image)
+(require test-engine/racket-tests)
+; Information  
+(define WIDTH 40)
+(define HEIGHT 40)
 (define INIT-LIVES 3)   ; numero de vidas iniciais
 (define INIT-SCORE 500) ; pontuação inicial
 (define TAMANHO-FONTE-INFO 20)  ; tamanho da fonte das informaçoes (score and lives)
 (define INIT-SCORE-X 8)     ; coordenada x da pontuação inicial
 (define INIT-LIVES-X 20)    ; coordenada x das vidas iniciais
 (define INFO-Y 68)          ; coordenada y das informaçoes
-(define VITORIA-FROG (bitmap "img/win_frog.png"))   ; tela de vitoria
+(define VITORIA-FROG (bitmap "d:/Users/Win 7/Documents/UEM/Paradigma Funcional/imagem"))   ; tela de vitoria
 (define GAME-OVER  ; tela de derrota     
   (place-image (text "Game Over :(" 40 'red)
                (/ WIDTH 2) (/ HEIGHT 2)
